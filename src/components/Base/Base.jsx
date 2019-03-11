@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TicTac from '../TicTac/TicTac';
 
-const Base = (props) =>{
+const Base = (props) => {
     return (
       <div className="base-container">
-        <TicTac/>
+        <TicTac value={props.baseArray[0]} onClick={props.onClick}/>
       </div>
     );
 };
