@@ -1,6 +1,7 @@
 import React from 'react';
 import Base from '../Base/Base';
 import Turn from '../Turn/Turn';
+import Steps from '../Steps/Steps';
 import './Contest.css';
 
 function getSolution() {
@@ -34,6 +35,9 @@ class Contest extends React.Component {
         </div>
         <div className="contest-section">
           <Turn champion={'X'} turn={this.state.nextX} steps={this.state.steps}/>
+          <ul>
+            <Steps chances={this.state.chances} onClick={this.revertState}/>
+          </ul>
         </div>
       </div>
     );
