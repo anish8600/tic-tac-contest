@@ -14,4 +14,8 @@ describe('Contest', () => {
   it('should render the Base Component', () => {
     expect(wrapper.containsMatchingElement(<Base baseArray={wrapper.instance().state.chances} onClick={wrapper.instance().updateState}/>)).toEqual(true);
   });
+
+  it('should render the Base Component', () => {
+    expect(wrapper.containsMatchingElement(<Turn champion={wrapper.instance().state.chances} turn={wrapper.instance().state.nextX} steps={wrapper.instance().state.steps} />)).toEqual(true);
+  });
 });
