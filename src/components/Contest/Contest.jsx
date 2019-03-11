@@ -1,4 +1,5 @@
 import React from 'react';
+import Base from '../Base/Base';
 import './Contest.css';
 
 function getSolution() {
@@ -25,7 +26,12 @@ class Contest extends React.Component {
 
   render = () => {
     return (
-      <div className="contest-base" />
+      <div className="contest-base">
+        <div className="contest-base">
+          <h1> TIC TOE GAME </h1>
+          <Base />
+        </div>
+      </div>
     );
   }
 }
