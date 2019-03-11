@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Design Process
 
-## Available Scripts
+Below is the design for the Tic-toa-game web application. I am breaking each part of the game in separate components and below is the description-
 
-In the project directory, you can run:
+### `1. App Component-`
+   This is the top level component will be injected into the index.html.This component will have no functionality as it is simply the top parent container. I will apply simple css in it to give background color to whole page.
 
-### `npm start`
+   ### No functions, state, props, inside
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `2. Content Component-`
+   This is the first level stateful component will be serve as the container for all other components mentioned below. This component is the base where Base, Turn, Steps component will be intgrated.
+   This container will also contain the methd which will give you the solution of the tic-tacs.
+ 
+   ### 4 functions, 1 state, no props will be there.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+   a. getSolution() - This function will calculate the winner.This function will be outside the component and will accept baseArray and returns you null when there is no solution for the scenario(no winner) , and return an array when there is a winner.
 
-### `npm test`
+   b. updateState() - This method will update state whenever player is playing a game. It will be execueted on click.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   c. revertState() - This function will revert the state to specific move.
+   d. render()      - It will be render the output of the component.
+   e. State         - There will be threee variable in state -
+     i.  chances    - This is an array of objects.
+     ii. steps      - This is a number used to calculate the number of steps user has played. So                       everytime user click in the game squares, It will be updated by 1.
+     iii. nextX     - This is a boolean which is true by default as first player will be 'X', It will                  update to false when 'O' is playing.
 
-### `npm run build`
+### `3. Base Component-` 
+   This component is child Stateless Component. This will gorup all the sqaure together and form a matrix so that users can play on the Base. Tic Tac Componet will be used in this.
+   
+   ### 2 function, no state, 2 props will be used.
+   
+    a. formMatrix() - This method will form the sqaure and will return Tic Tac component.
+    b. render()     - This will be used to render  the output.
+    c. Props        - 2 props will be used-
+      i. baseArray  - This array will be taken as prop from Contest Component.
+      ii.onClick    - This is an event handler which will update state in Contest Component.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `4. Tic Tac Component-`
+   This component is Stateless Component and will be used to make sqaure. This will display 'X' 'O' in the sqaure. It will be accpet two props from the Base Component.
+   
+   ### No function, no state, 2 props wil be used.
+   
+    a. Props        - Two props will be used.
+      i. value      - This will contain value X O and will receive from Base Component.
+      ii.onClick    - This is an event handler which will update state in Contest Component via Base                  Component.   
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### `5. Turn Component-` 
+   This component is Stateless Component and is simply used to display message - Who is the next player, Who will be the winner and When there is Tie.
+   
+   ### No function, no state and 3 props.
+   
+   a. Props         - Three props will be used from Contest Component.
+     i.  champion   - This will be used to display winnre message.
+     ii. turn       - This will be used to display Next player message.
+     iii.steps      - This will be used to display tie message.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### `6. Steps Component-`
+   This component is a Stateless Component and used to show the list of moves done so far by the players.
+   
+   ### No function, no state, 2 props will be used.
+   
+   a. Props         - Two props will be used from Contest component
+     i. chances     - This in an array which contains all the states so far updated
+     ii.onClick     - This is an event handler which will revert state in Contest Component.
