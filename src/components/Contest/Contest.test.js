@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Contest from './Contest/Contest';
+import Contest from './Contest';
 
 describe('Contest', () => {
   let wrapper;
