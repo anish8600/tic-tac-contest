@@ -14,4 +14,8 @@ describe('App', () => {
   it('should render the Contest Component', () => {
     expect(wrapper.containsMatchingElement(<Contest />)).toEqual(true);
   });
+
+  it('should render correctly', () => {
+    expect(wrapper).toMatchSnapshot()
+  });
 });
