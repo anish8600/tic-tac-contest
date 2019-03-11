@@ -29,7 +29,7 @@ class Contest extends React.Component {
       <div className="contest-container">
         <div className="contest-base">
           <h1> TIC TOE GAME </h1>
-          <Base />
+          <Base baseArray={this.state.chances} onClick={this.updateState} />
         </div>
       </div>
     );

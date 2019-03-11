@@ -11,7 +11,7 @@ describe('Contest', () => {
     expect(wrapper.find('div').length).toEqual(2);
   });
 
-  it('should render the Display Component', () => {
-    expect(wrapper.containsMatchingElement(<Base />)).toEqual(true);
+  it('should render the Base Component', () => {
+    expect(wrapper.containsMatchingElement(<Base baseArray={wrapper.instance().state.chances} onClick={wrapper.instance().updateState}/>)).toEqual(true);
   });
 });
