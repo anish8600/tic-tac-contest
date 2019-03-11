@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TicTac = (props) => <button className="tictac" />;
+const TicTac = (props) => <button className="tictac" onClick={props.onClick}> {props.value} </button>
 
 TicTac.propTypes = { value: PropTypes.string.isRequired, onClick: PropTypes.func.isRequired};
 
