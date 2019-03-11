@@ -19,7 +19,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Contest />,
-      "className": "contest-container",
+      "className": "app-contest-container",
     },
     "ref": null,
     "rendered": Object {
@@ -40,7 +40,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Contest />,
-        "className": "contest-container",
+        "className": "app-contest-container",
       },
       "ref": null,
       "rendered": Object {
