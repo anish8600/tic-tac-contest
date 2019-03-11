@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import Contest from './Contest';
 import Base from '../Base/Base';
 import Turn from '../Turn/Turn';
+import Steps from '../Steps/Steps';
 
 describe('Contest', () => {
   let wrapper;
@@ -18,5 +19,9 @@ describe('Contest', () => {
 
   it('should render the Turn Component', () => {
     expect(wrapper.containsMatchingElement(<Turn champion={'X'} turn={wrapper.instance().state.nextX} steps={wrapper.instance().state.steps} />)).toEqual(true);
+  });
+
+  it('should render the Steps Component', () => {
+    expect(wrapper.containsMatchingElement(<Steps chances={wrapper.instance().state.chances} onClick={wrapper.instance().revertState}/>)).toEqual(true);
   });
 });
