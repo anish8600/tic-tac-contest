@@ -26,7 +26,7 @@ describe('Contest', () => {
   });
 
   it('should have initial state', () => {
-    expect(wrapper.instance().state.chances).toEqual([Array(9).fill(null)]);
+    expect(wrapper.instance().state.chances).toEqual([ {baseArray:Array(9).fill(null)}]);
     expect(wrapper.instance().state.steps).toEqual(0);
     expect(wrapper.instance().state.nextX).toEqual(true);
   });

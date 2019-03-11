@@ -2,6 +2,7 @@ import React from 'react';
 import Base from '../Base/Base';
 import Turn from '../Turn/Turn';
 import Steps from '../Steps/Steps';
+import { TIC_TAC_SOLUTION, TIC_TAC_CONSTANTS } from '../../helper/tictacHelper';
 import './Contest.css';
 
 function getSolution() {
@@ -12,7 +13,7 @@ class Contest extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      chances: [],
+      chances: [{ baseArray: Array(9).fill(null) }],
       steps: 0,
       nextX: true
     };
@@ -30,7 +31,7 @@ class Contest extends React.Component {
     return (
       <div className="contest-container">
         <div className="contest-base">
-          <h1> TIC TOE GAME </h1>
+          <h1> {TIC_TAC_CONSTANTS.TIC_TAC_HEADING} </h1>
           <Base baseArray={this.state.chances} onClick={this.updateState} />
         </div>
         <div className="contest-section">
