@@ -1,5 +1,6 @@
 import React from 'react';
 import Base from '../Base/Base';
+import Turn from '../Turn/Turn';
 import './Contest.css';
 
 function getSolution() {
@@ -30,6 +31,9 @@ class Contest extends React.Component {
         <div className="contest-base">
           <h1> TIC TOE GAME </h1>
           <Base baseArray={this.state.chances} onClick={this.updateState} />
+        </div>
+        <div className="contest-section">
+          <Turn champion={'X'} turn={this.state.nextX} steps={this.state.steps}/>
         </div>
       </div>
     );
