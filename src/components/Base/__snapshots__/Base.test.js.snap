@@ -71,6 +71,7 @@ ShallowWrapper {
           />
 </div>,
       ],
+      "className": "base-container",
     },
     "ref": null,
     "rendered": Array [
@@ -319,6 +320,7 @@ ShallowWrapper {
             />
 </div>,
         ],
+        "className": "base-container",
       },
       "ref": null,
       "rendered": Array [

@@ -4,7 +4,7 @@ import Turn from './Turn';
 
 describe('Turn', () => {
   let wrapper;
-  beforeEach(() => wrapper = shallow(<Turn champion={'X'} turn={'X'} steps={3}/>));
+  beforeEach(() => wrapper = shallow(<Turn champion={'X'} turn={true} steps={3}/>));
 
   it('should render correctly', () => {
     expect(wrapper).toMatchSnapshot()

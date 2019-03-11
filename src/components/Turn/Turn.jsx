@@ -14,8 +14,8 @@ const Turn = (props) => {
   return <h2>{turnIndicator}</h2>;
 }
 
-Turn.propTypes = { champion: PropTypes.string.isRequired, 
-                   turn: PropTypes.string.isRequired,
+Turn.propTypes = { champion: PropTypes.string, 
+                   turn: PropTypes.bool.isRequired,
                    steps: PropTypes.number.isRequired
                  };
 

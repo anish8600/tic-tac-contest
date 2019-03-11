@@ -6,7 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Turn
     champion="X"
     steps={3}
-    turn="X"
+    turn={true}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

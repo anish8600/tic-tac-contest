@@ -51,7 +51,7 @@ class Contest extends React.Component {
   render = () => {
     const chances = this.state.chances;
     const live = chances[this.state.steps];
-    const champion = getSolution(live.baseArray);
+    const champion = getSolution(live.baseArray) ;
     
     return (
       <div className="contest-container">
