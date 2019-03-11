@@ -24,4 +24,10 @@ describe('Contest', () => {
   it('should render the Steps Component', () => {
     expect(wrapper.containsMatchingElement(<Steps chances={wrapper.instance().state.chances} onClick={wrapper.instance().revertState}/>)).toEqual(true);
   });
+
+  it('should have initial state', () => {
+    expect(wrapper.instance().state.chances).toEqual([Array(9).fill(null)]);
+    expect(wrapper.instance().state.steps).toEqual(0);
+    expect(wrapper.instance().state.nextX).toEqual(true);
+  });
 });
