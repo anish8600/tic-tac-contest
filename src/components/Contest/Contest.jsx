@@ -17,7 +17,7 @@ function getSolution(baseArray){
 }
 
 class Contest extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       chances: [{ baseArray: Array(9).fill(null) }],
@@ -26,12 +26,11 @@ class Contest extends React.Component {
     };
   }
 
-  updateState = (e) => {
-    const eventValue = e.target.value;
+  updateState(i) {
     const chances = this.state.chances.slice(0, this.state.steps + 1);
     const live = chances[chances.length - 1];
     const baseArray = live.baseArray.slice();
-    if (getSolution(baseArray) || baseArray[eventValue]) {
+    if (getSolution(baseArray) || baseArray[i]) {
       return;
     }
     baseArray[i] = this.state.nextX ? TIC_TAC_CONSTANTS.X_SYMBOL : TIC_TAC_CONSTANTS.O_SYMBOL;
@@ -41,9 +40,8 @@ class Contest extends React.Component {
       nextX: !this.state.nextX
     });
   }
-
-  revertState = (e) => {
-    const step = e.target.value;
+  
+  revertState(step) {
     this.setState({
       steps: step,
       nextX: (step % 2) === 0
@@ -59,12 +57,12 @@ class Contest extends React.Component {
       <div className="contest-container">
         <div className="contest-base">
           <h1> {TIC_TAC_CONSTANTS.TIC_TAC_HEADING} </h1>
-          <Base baseArray={live.baseArray} onClick={this.updateState} />
+          <Base baseArray={live.baseArray} onClick={i => this.updateState(i)} />
         </div>
         <div className="contest-section">
           <Turn champion={champion} turn={this.state.nextX} steps={this.state.steps}/>
           <ul>
-            <Steps chances={chances} onClick={this.revertState}/>
+            <Steps chances={chances} onClick={i => this.revertState(i)}/>
           </ul>
         </div>
       </div>
