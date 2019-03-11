@@ -62,3 +62,16 @@ Below is the design for the Tic-toa-game web application. I am breaking each par
    a. Props         - Two props will be used from Contest component
      i. chances     - This in an array which contains all the states so far updated
      ii.onClick     - This is an event handler which will revert state in Contest Component.
+
+
+
+------------------------------------------------------------------------------------------------------
+Please run below steps:-
+
+1. Run below command to clone code-
+   https://github.com/anish8600/tic-tac-web.git
+2. Goto tic-tac-web directory and run 'npm install'. If any problem occues. Delete existing              package.lock.json
+3. After installation is done, run 'npm start' and application will automatically start at               localhost:3000  on browser. If it gives any problem on IE, please run on Google Chrome.
+4. Please test application.
+5. For running test cases, press ctrl+c to exit server and run 'npm test' to start test cases.
+   Press a to run all test cases if it asks.
