@@ -33,6 +33,6 @@ class Base extends React.Component{
       }
 }
 
-Base.propTypes = { baseArray: PropTypes.array.isRequired, onClick: PropTypes.func.isRequired};
+Base.propTypes = { baseArray: PropTypes.array.isRequired, onClick: PropTypes.func};
 
 export default Base;

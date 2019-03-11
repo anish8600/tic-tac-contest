@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Base from './Base';
 import TicTac from '../TicTac/TicTac';
 
@@ -15,8 +15,15 @@ describe('Base', () => {
     expect(wrapper.find('div').length).toEqual(4);
   });
 
-  xit('should render the TicTac Component', () => {
-    expect(wrapper.containsMatchingElement(<TicTac value={''} onClick={()=>{}}/>)).toEqual(true);
+  it('should render the TicTac Component', () => {
+    expect(wrapper.containsMatchingElement(<TicTac />)).toEqual(true);
   });
 
+  it('should call onClick event on click of a tictac', () =>{
+    let tictacs = Array(9).fill(null);
+    const onClick = jest.fn();
+    let wrapper = mount(<Base baseArray={tictacs} onClick={onClick}/>);
+    wrapper.find('button.tictac').first().simulate('click');
+    expect(onClick).toBeCalledWith(0)
+  })
 });

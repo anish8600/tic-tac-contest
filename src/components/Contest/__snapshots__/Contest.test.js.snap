@@ -1,0 +1,551 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contest should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Contest />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="contest-base"
+>
+          <h1>
+                     
+                    TIC TAC TOE CONTEST
+                     
+          </h1>
+          <Base
+                    baseArray={
+                              Array [
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                      ]
+                    }
+                    onClick={[Function]}
+          />
+</div>,
+        <div
+          className="contest-section"
+>
+          <Turn
+                    champion={null}
+                    steps={0}
+                    turn={true}
+          />
+          <ul>
+                    <Steps
+                              chances={
+                                        Array [
+                                                  Object {
+                                                    "baseArray": Array [
+                                                      null,
+                                                      null,
+                                                      null,
+                                                      null,
+                                                      null,
+                                                      null,
+                                                      null,
+                                                      null,
+                                                      null,
+                                                    ],
+                                                  },
+                                                ]
+                              }
+                              onClick={[Function]}
+                    />
+          </ul>
+</div>,
+      ],
+      "className": "contest-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+               
+              TIC TAC TOE CONTEST
+               
+</h1>,
+            <Base
+              baseArray={
+                            Array [
+                                          null,
+                                          null,
+                                          null,
+                                          null,
+                                          null,
+                                          null,
+                                          null,
+                                          null,
+                                          null,
+                                        ]
+              }
+              onClick={[Function]}
+/>,
+          ],
+          "className": "contest-base",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "TIC TAC TOE CONTEST",
+                " ",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "TIC TAC TOE CONTEST",
+              " ",
+            ],
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "baseArray": Array [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+              ],
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Turn
+              champion={null}
+              steps={0}
+              turn={true}
+/>,
+            <ul>
+              <Steps
+                            chances={
+                                          Array [
+                                                        Object {
+                                                          "baseArray": Array [
+                                                            null,
+                                                            null,
+                                                            null,
+                                                            null,
+                                                            null,
+                                                            null,
+                                                            null,
+                                                            null,
+                                                            null,
+                                                          ],
+                                                        },
+                                                      ]
+                            }
+                            onClick={[Function]}
+              />
+</ul>,
+          ],
+          "className": "contest-section",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "champion": null,
+              "steps": 0,
+              "turn": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Steps
+                chances={
+                                Array [
+                                                Object {
+                                                  "baseArray": Array [
+                                                    null,
+                                                    null,
+                                                    null,
+                                                    null,
+                                                    null,
+                                                    null,
+                                                    null,
+                                                    null,
+                                                    null,
+                                                  ],
+                                                },
+                                              ]
+                }
+                onClick={[Function]}
+/>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "chances": Array [
+                  Object {
+                    "baseArray": Array [
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                    ],
+                  },
+                ],
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="contest-base"
+>
+            <h1>
+                         
+                        TIC TAC TOE CONTEST
+                         
+            </h1>
+            <Base
+                        baseArray={
+                                    Array [
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                              ]
+                        }
+                        onClick={[Function]}
+            />
+</div>,
+          <div
+            className="contest-section"
+>
+            <Turn
+                        champion={null}
+                        steps={0}
+                        turn={true}
+            />
+            <ul>
+                        <Steps
+                                    chances={
+                                                Array [
+                                                            Object {
+                                                              "baseArray": Array [
+                                                                null,
+                                                                null,
+                                                                null,
+                                                                null,
+                                                                null,
+                                                                null,
+                                                                null,
+                                                                null,
+                                                                null,
+                                                              ],
+                                                            },
+                                                          ]
+                                    }
+                                    onClick={[Function]}
+                        />
+            </ul>
+</div>,
+        ],
+        "className": "contest-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                 
+                TIC TAC TOE CONTEST
+                 
+</h1>,
+              <Base
+                baseArray={
+                                Array [
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                              ]
+                }
+                onClick={[Function]}
+/>,
+            ],
+            "className": "contest-base",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "TIC TAC TOE CONTEST",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "TIC TAC TOE CONTEST",
+                " ",
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "baseArray": Array [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                ],
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Turn
+                champion={null}
+                steps={0}
+                turn={true}
+/>,
+              <ul>
+                <Steps
+                                chances={
+                                                Array [
+                                                                Object {
+                                                                  "baseArray": Array [
+                                                                    null,
+                                                                    null,
+                                                                    null,
+                                                                    null,
+                                                                    null,
+                                                                    null,
+                                                                    null,
+                                                                    null,
+                                                                    null,
+                                                                  ],
+                                                                },
+                                                              ]
+                                }
+                                onClick={[Function]}
+                />
+</ul>,
+            ],
+            "className": "contest-section",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "champion": null,
+                "steps": 0,
+                "turn": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Steps
+                  chances={
+                                    Array [
+                                                      Object {
+                                                        "baseArray": Array [
+                                                          null,
+                                                          null,
+                                                          null,
+                                                          null,
+                                                          null,
+                                                          null,
+                                                          null,
+                                                          null,
+                                                          null,
+                                                        ],
+                                                      },
+                                                    ]
+                  }
+                  onClick={[Function]}
+/>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "chances": Array [
+                    Object {
+                      "baseArray": Array [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                      ],
+                    },
+                  ],
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "ul",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
