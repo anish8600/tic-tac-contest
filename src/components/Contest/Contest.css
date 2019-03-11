@@ -1,3 +1,14 @@
-.contest-container, .contest-base {
-    margin-left: 6em;
-  }
+.contest-container {
+   display: flex;
+   flex-direction: row;
+}
+
+.contest-base {
+  margin-left: 6em;
+}
+
+.contest-section{
+  margin-left: 3em;
+  font-weight: bold;
+  line-height: 2em;
+}
